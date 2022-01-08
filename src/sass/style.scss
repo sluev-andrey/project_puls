@@ -7,6 +7,25 @@ a{
   color: inherit;
 }
 
+.button{
+  width: 153px;
+  height: 32px;
+  background-color: #C70101;
+  border-radius: 5px;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.phone{
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
 .container{
   max-width: 946  px;
   margin: 0 auto;
@@ -81,24 +100,28 @@ a{
     width: 136px;
     text-align: center;
   }
+  &__btn{
+    margin-top: 67px;
+    width: 300px;
+    height: 50px; 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  &__link{
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    &-item{
+      font-weight: 500;
+      text-decoration: underline;
+    }
+  }
 }
 
-.phone{
-  font-weight: 700;
-  font-size: 18px;
-  color: #FFFFFF;
-}
 
-.button{
-  width: 153px;
-  height: 32px;
-  background-color: #C70101;
-  border-radius: 5px;
-  border: none;
-  color: #FFFFFF;
-  font-weight: 500;
-  font-size: 12px;
-  text-align: center;
-  text-transform: uppercase;
-  
-}
+
+
