@@ -48,7 +48,7 @@ a{
     font-size: 12px;
     line-height: 12px;
     text-align: center;
-    color: $main-color;
+    color: #FFFFFF;
     span{
       display: block;
       font-size: 18px;
@@ -68,7 +68,7 @@ a{
     font-size: 42px;
     line-height: 42px;
     text-transform: uppercase;
-    color: $main-color;
+    color: #FFFFFF;
     margin: 91px 0 17px;
   }
   &__subtitle{
@@ -76,7 +76,7 @@ a{
     font-size: 24px;
     line-height: 24px;
     text-transform: uppercase;
-    color: $main-color;
+    color: #FFFFFF;
   }
   &__icons{
     display: flex;
@@ -96,7 +96,7 @@ a{
     font-weight: 500;
     font-size: 14px;
     line-height: 14px;
-    color: $main-color;
+    color: #FFFFFF;
     width: 136px;
     text-align: center;
   }
@@ -108,13 +108,13 @@ a{
     font-size: 16px;
     line-height: 25px;
     text-transform: uppercase;
-    color: $main-color;
+    color: #FFFFFF;
   }
   &__link{
     margin-top: 8px;
     font-weight: 400;
     font-size: 16px;
-    color: $main-color;
+    color: #FFFFFF;
     &-item{
       font-weight: 500;
       text-decoration: underline;
@@ -123,16 +123,16 @@ a{
 }
 
 
-// .benefits{
-//   min-height: 473px;
-//   &__title{
-//     font-weight: 700;
-//     font-size: 30px;
-//     line-height: 30px;
-//     text-align: center;
-//     color: #0D0D0D;
-//   }
-// }
+.benefits{
+  min-height: 473px;
+  &__title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #0D0D0D;
+  }
+}
 
 
 
