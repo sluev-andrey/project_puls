@@ -122,7 +122,6 @@ a{
   }
 }
 
-
 .benefits{
   min-height: 473px;
   &__title{
@@ -131,6 +130,37 @@ a{
     line-height: 30px;
     text-align: center;
     color: #0D0D0D;
+    margin-top: 73px;
+  }
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+  &__icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-title{
+      margin-top: 35px;
+      width: 226px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 18px;
+      color: #0D0D0D;
+    }
+    &-text{
+      width: 300px;
+      margin-top: 20px;
+      text-align: center;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 18px;
+      color: #0D0D0D;
+      a{
+        color: #C70101;
+      }
+    }
   }
 }
 
