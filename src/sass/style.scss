@@ -224,8 +224,42 @@ a{
   }
 }
 
+.carousel{
+  padding: 81px 0;
+  &__inner{
+    position: relative;
+    width: 750px;
+    margin: 0 auto;
+  }
 
+}
 
+.slick-next, slick-prev{
+  position: absolute;
+  border: none;
+  background-color: #FFFFFF;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -66px;
+  img{
+    width: 31px;
+    height: 50px;
+  }
+}
+
+.slick-prev{
+  position: absolute;
+  border: none;
+  background-color: #FFFFFF;
+  left: auto;
+  right: -66px;
+  top: 50%;
+  transform: translateY(-50%);
+  img{
+    width: 31px;
+    height: 50px;
+  }
+}
 
 
 
