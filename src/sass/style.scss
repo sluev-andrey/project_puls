@@ -259,7 +259,7 @@ a{
 
 
 .catalog{
-  padding-bottom: 100px;
+  padding-bottom: 79px;
   &__title{
     color: #0D0D0D;
     text-align: center;
@@ -435,3 +435,78 @@ a{
 }
 }
 
+.reviews{
+  padding-bottom: 46px;
+  &__title{
+    color: #0D0D0D;
+    text-align: center;
+  }
+  &-item{
+    display: flex;
+    margin-top: 60px;
+    &__img{
+      width: 169px;
+      height: 169px;
+    }
+    &__content{
+      padding-left: 61px;
+    }
+    &__title{
+      font-weight: 700;
+      font-size: 18px;
+      color: #0D0D0D;
+    }
+    &__subtitle{
+      font-weight: 500;
+      font-size: 14px;
+      color: #646464;
+    }
+    &__text{
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 25px;
+      color: #0D0D0D;
+      margin-top: 10px;
+    }
+  } 
+}
+
+.footer{
+  height: 630px;
+  position: relative;
+  &__map{
+    // position: relative;
+  }
+  &__info{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 460px;
+    height: 270px;
+    background-color: #C70101;
+  }
+  &__address{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 50px;
+  }
+  &__phone{
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 20px;
+  }
+  &__social{
+    text-align: center;
+    margin-top: 36px;
+    &-item{
+      padding-right: 25px;
+    }
+    
+  }
+}
