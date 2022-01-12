@@ -2,10 +2,11 @@ $(document).ready(function () {
   $('.carousel__inner').slick({
     speed: 1200,
     slidesToShow: 1,
-    // adaptiveHeight: true,
     prevArrow: '<button type="button" class="slick-prev"><img src="images/arrow_right.png" alt=""></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="images/arrow_left.svg" alt=""></button>',
   });
+
+  //tabs block
 
   $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab-active)', function () {
     $(this)
@@ -34,9 +35,6 @@ $(document).ready(function () {
   $('.modal__close').on('click', function() {
     $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
   });
-  // $('.button-mini').on('click', function() {
-  //   $('.overlay, #order').fadeIn('slow');
-  // });
 
   $('.button-mini').each(function(i) {
     $(this).on('click', function(){
@@ -44,6 +42,38 @@ $(document).ready(function () {
       $('.overlay, #order').fadeIn('slow');
     });
   });
+
+  // validate jqeury
+
+  function valideForms(form){
+    $(form).validate({
+      rules: {
+        name: "required",
+        phone: "required",
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        name: "Введите свое имя",
+        phone: "Введите свой номер телефона",
+        email: {
+          required: "Введите свой почту",
+          email: "Неправильно введен адресс почты"
+        }
+      }
+    });
+  };
+
+  valideForms('#consultation-form');
+  valideForms('#consultation form');
+  valideForms('#order form');
+
+  //mask phone//
+
+  $('input[name=phone]').mask("+7(999) 999-99-99");
+
 });
 
 
