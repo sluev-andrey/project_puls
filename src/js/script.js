@@ -94,6 +94,25 @@ $(document).ready(function () {
     });
     return false;
   });
+
+  //smooth scroll
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 1600) {
+      $('.pageup__link').fadeIn();
+    } else {
+      $('.pageup__link').fadeOut();
+    }
+  });
+
+  //Smooth Scroll
+
+  $("a[href=#up]").click(function () {
+    const _href = $(this).attr("href");
+    $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+    return false;
+  });
+
 });
 
 
